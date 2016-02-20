@@ -23,12 +23,6 @@ function checker($a, $b, $c) {
         if(checker($a + $b, $b, $c)) {
             return true;
         }
-        if (checker($b, $a + $b, $c)) {
-            return true;
-        }
-        if(checker($a + $b, $a, $c)) {
-            return true;
-        }
     }
     print $a . "+" . $b . "==" . $c . "\n";
     if ($a + $b == $c) {
